@@ -14,7 +14,7 @@ public class CommandLineArgs {
                 }
             }
         } else {
-            System.out.println("Rows and columns not specified. PLease check below msg");
+            System.out.println("Rows and columns not specified. Please check below msg");
             System.out.println("Added this Line");
         }
     }
