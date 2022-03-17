@@ -35,7 +35,7 @@ class Dog extends Bird {
 
     @Override
     public void sound() {
-        System.out.println("Bark");
+        System.out.println("BARK");
     }
 
 }
@@ -45,7 +45,7 @@ class Cat extends Bird {
 
     @Override
     public void sound() {
-        System.out.println("Meow");
+        System.out.println("MEOW");
     }
 
 }
