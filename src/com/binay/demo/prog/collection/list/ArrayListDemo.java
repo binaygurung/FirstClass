@@ -11,7 +11,9 @@ public class ArrayListDemo {
         names.add("Binay");
         names.add("Binay");
 
-        Iterator<String> itr = names.iterator();
+        names.iterator();
+
+        ListIterator<String> itr = names.listIterator();
         while(itr.hasNext()){
             String name = itr.next();
             System.out.println("** : " + name);
@@ -23,6 +25,7 @@ public class ArrayListDemo {
 
         List nonGenericList = (List) names. clone();
 
+        names.add(1, "Batman");
         System.out.println(names.get(0));
         System.out.println(names.get(2));
         System.out.println(names.get(1));
@@ -33,7 +36,6 @@ public class ArrayListDemo {
         System.out.println("Removed Name from List : " + listName.remove(listName.lastIndexOf("Binay")));
         Predicate<String> binayNamePredicate = name -> name.equals("Binay");
         listName.removeIf(binayNamePredicate);
-
         System.out.println("Size Of The List : " + names.size());
         System.out.println("Is The List is Empty? : " + names.isEmpty());
         System.out.println("List Contains With Only Small Letters :" + names.contains("binay"));
